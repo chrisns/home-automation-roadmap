@@ -6,10 +6,8 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
 ## Cluster
 - [ ] mixed x64, x86, arm docker swarm cluster (swarm over kubenetes only for native simplicity)
     - https://docs.docker.com/docker-cloud/apps/stack-yaml-reference/
-- [ ] resiliant and self recovering clustered mqtt
-    - https://github.com/georgepoenaru/vernemqube
-    - https://vernemq.com
-    - https://vernemq.com/docs/installation/docker.html
+- [x] resiliant and self recovering clustered mqtt
+    - https://github.com/pinked/clustered-verneMQ
 - [ ] pin zwave+rfxcom docker containers to hardware that supports it
     - docker swarm labels
 
