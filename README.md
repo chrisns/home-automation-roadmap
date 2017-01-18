@@ -26,10 +26,11 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
 - [ ] rfxcom <-> mqtt
      - https://github.com/Anton04/RFXcom-MQTT-bridge
      - https://github.com/leachj/mqtt-rfxcom
-- [ ] lifx <-> mqtt
-     - https://github.com/joshproehl/lifx-wrangler
-     - https://github.com/stormboy/node-meem-lifx
-     - https://github.com/hlfshell/lifx-mqtt
+- [x] lifx <-> mqtt
+     - https://github.com/pinked/clustered-lifx-mqtt
+       - https://github.com/joshproehl/lifx-wrangler
+       - https://github.com/stormboy/node-meem-lifx
+       - https://github.com/hlfshell/lifx-mqtt
 - [ ] alexa <-> mqtt
      - maybe node-red / openhab?
 - [ ] alarm decoder <-> mqtt
