@@ -18,6 +18,13 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
      - https://www.synology.com/en-uk/surveillance/7.2
 
 ## MQTT Integration
+- [ ] IP Presence > mqtt
+     - https://github.com/chrisns/ifttt-ip-presence
+- [ ] Phone location > mqtt
+     - http://owntracks.org
+- [ ] Find my iphone < mqtt
+     - https://github.com/matt-kruse/find-my-iphone
+     - https://hub.docker.com/r/rossdargan/findwifesphone/
 - [ ] zwave <-> mqtt
      - https://github.com/simook/zwave-mqtt-broker
 - [ ] sonos <-> mqtt
