@@ -6,8 +6,16 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
 ## Cluster
 - [ ] mixed x64, x86, arm docker swarm cluster (swarm over kubenetes only for native simplicity)
     - https://docs.docker.com/docker-cloud/apps/stack-yaml-reference/
+    - https://medium.com/@chanwit/cross-platform-hybrid-cloud-with-docker-ded000f792fb
 - [x] resiliant and self recovering clustered mqtt
     - https://github.com/pinked/clustered-verneMQ
+- [x] ingress DNS based controller
+    - https://github.com/pinked/infra
+- [ ] https on ingress
+    - http://api.heartinternet.co.uk/api2.html#uid-d--dns-commands--update-dns
+    - https://github.com/Neilpang/acme.sh
+    - https://github.com/hamburml/docker-flow-letsencrypt
+    - https://customer.heartinternet.uk/manage/api
 - [ ] pin zwave+rfxcom docker containers to hardware that supports it
     - docker swarm labels
 
@@ -40,6 +48,11 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
        - https://github.com/hlfshell/lifx-mqtt
 - [ ] alexa <-> mqtt
      - maybe node-red / openhab?
+     - https://github.com/arlogilbert/echo-sonos-apple-music
+     - https://developer.amazon.com/blogs/post/Tx3828JHC7O9GZ9/Using-Alexa-Skills-Kit-and-AWS-IoT-to-Voice-Control-Connected-Devices
+     - https://www.hackster.io/fileark/alexapi-mqtt-smart-hub-984dcf
+- [ ] d-link <-> mqtt
+     - https://github.com/bikerp/dsp-w215-hnap/wiki
 - [ ] alarm decoder <-> mqtt
      - http://www.eyezon.com/?page_id=176
      - https://github.com/rjferguson21/envisalink-to-mqtt
@@ -62,5 +75,8 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
      - IFTT
      - bluetooth
      - z-wave presence detectors
-    
+- [ ] UI <-> MQTT
+     - http://www.hivemq.com/demos/websocket-client/
+- [ ] Facebook messenger <-> MQTT
+
 
