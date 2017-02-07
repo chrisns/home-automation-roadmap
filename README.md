@@ -22,6 +22,12 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
     - https://github.com/Neilpang/acme.sh
     - https://github.com/hamburml/docker-flow-letsencrypt
     - https://customer.heartinternet.uk/manage/api
+- [ ] CI/CD
+    - https://github.com/pinked/clustered-drone
+    - [x] external access via localtunnel.me
+    - [ ] application firewall/naxsi between localtunnel.me and drone to verify its a valid request from github
+    - [x] drone doing deploys to the swarm
+    - [ ] drone volume persistence in swarm [blocked by no gluster]
 - [ ] pin zwave+rfxcom docker containers to hardware that supports it
     - docker swarm labels
 
@@ -83,6 +89,7 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
      - z-wave presence detectors
 - [ ] UI <-> MQTT
      - http://www.hivemq.com/demos/websocket-client/
+     - https://github.com/edfungus/Crouton
 - [ ] Facebook messenger <-> MQTT
      - https://www.npmjs.com/package/fbmessenger
 - [ ] Waterrower > MQTT
