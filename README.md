@@ -4,9 +4,15 @@ This roughly describes the roadmap (not in order) for automating my home
 I'm trying to approach it with a BDD approach and will aim to document the requirements with [Gherkin style feature files](./Features)
 
 ## Cluster
-- [ ] mixed x64, x86, arm docker swarm cluster (swarm over kubenetes only for native simplicity)
+- [x] mixed x64, x86, arm docker swarm cluster (swarm over kubenetes only for native simplicity)
+    - https://github.com/pinked/infra
     - https://docs.docker.com/docker-cloud/apps/stack-yaml-reference/
     - https://medium.com/@chanwit/cross-platform-hybrid-cloud-with-docker-ded000f792fb
+- [ ] long term containerized volume on demand distributed + replicated persistence magic
+    - https://github.com/djmaze/docker-gluster-cluster
+    - https://github.com/aravindavk/glusterfs-rest
+- [ ] interm host based replicated volume storage
+    - gluster
 - [x] resiliant and self recovering clustered mqtt
     - https://github.com/pinked/clustered-verneMQ
 - [x] ingress DNS based controller
@@ -78,5 +84,7 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
 - [ ] UI <-> MQTT
      - http://www.hivemq.com/demos/websocket-client/
 - [ ] Facebook messenger <-> MQTT
-
-
+     - https://www.npmjs.com/package/fbmessenger
+- [ ] Waterrower > MQTT
+     - https://www.npmjs.com/package/node-waterrower
+     - https://www.npmjs.com/package/waterrower
