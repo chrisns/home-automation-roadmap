@@ -11,13 +11,13 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
 - [ ] long term containerized volume on demand distributed + replicated persistence magic
     - https://github.com/djmaze/docker-gluster-cluster
     - https://github.com/aravindavk/glusterfs-rest
-- [ ] interm host based replicated volume storage
+- [x] interm host based replicated volume storage
     - gluster
 - [x] resiliant and self recovering clustered mqtt
     - https://github.com/pinked/clustered-verneMQ
 - [x] ingress DNS based controller
     - https://github.com/pinked/infra
-- [ ] https on ingress
+- [x] https on ingress
     - http://api.heartinternet.co.uk/api2.html#uid-d--dns-commands--update-dns
     - https://github.com/Neilpang/acme.sh
     - https://github.com/hamburml/docker-flow-letsencrypt
@@ -27,8 +27,8 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
     - [x] external access via localtunnel.me
     - [ ] application firewall/naxsi between localtunnel.me and drone to verify its a valid request from github
     - [x] drone doing deploys to the swarm
-    - [ ] drone volume persistence in swarm [blocked by no gluster]
-- [ ] pin zwave+rfxcom docker containers to hardware that supports it
+    - [x] drone volume persistence in swarm [blocked by no gluster]
+- [x] pin zwave+rfxcom docker containers to hardware that supports it
     - docker swarm labels
 
 ## Components and interfaces
