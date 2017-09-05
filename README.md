@@ -32,27 +32,35 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
     - docker swarm labels
 
 ## Components and interfaces
-- [ ] magic mirror interface
+- [x] magic mirror interface
 - [ ] mobile interface
-- [ ] surveillance camera recording
+- [x] surveillance camera recording
      - https://www.synology.com/en-uk/surveillance/7.2
 
 ## MQTT Integration
-- [ ] IP Presence > mqtt
-     - https://github.com/chrisns/ifttt-ip-presence
-- [ ] Phone location > mqtt
+- [ ] MQTT testing
+     - https://github.com/mcollina/mosca/wiki/Mosca-advanced-usage#--nothing
+- [x] IP Presence > mqtt
+     - ~~https://github.com/chrisns/ifttt-ip-presence~~
+- [x] Phone location > mqtt
+     - http://owntracks.org
+- [x] Phone location events > mqtt
      - http://owntracks.org
 - [ ] Find my iphone < mqtt
      - https://github.com/matt-kruse/find-my-iphone
      - https://hub.docker.com/r/rossdargan/findwifesphone/
-- [ ] zwave <-> mqtt
+- [x] zwave <-> mqtt
+     - using domoticz for the minute
      - https://github.com/simook/zwave-mqtt-broker
-- [ ] sonos <-> mqtt
-     - https://github.com/jpmens/mqttwarn
+- [x] sonos <-> mqtt
+     - ~~https://github.com/jpmens/mqttwarn~~ - couldn't use mqttwarn because doesn't support shared subscriptions so doesn't scale
+     - https://github.com/pinked/rules_engine
      - https://github.com/jishi/node-sonos-http-api
 - [ ] rfxcom <-> mqtt
      - https://github.com/Anton04/RFXcom-MQTT-bridge
      - https://github.com/leachj/mqtt-rfxcom
+- [x] weather > mqtt
+     - https://github.com/pinked/darksky-poller-mqtt
 - [x] lifx <-> mqtt
      - https://github.com/pinked/clustered-lifx-mqtt
        - https://github.com/joshproehl/lifx-wrangler
@@ -65,29 +73,39 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
      - https://www.hackster.io/fileark/alexapi-mqtt-smart-hub-984dcf
 - [ ] d-link <-> mqtt
      - https://github.com/bikerp/dsp-w215-hnap/wiki
-- [ ] alarm decoder <-> mqtt
-     - http://www.eyezon.com/?page_id=176
-     - https://github.com/rjferguson21/envisalink-to-mqtt
-     - https://github.com/dretay/mqtt-eyezon
+- [x] alarm <-> http proof of concept
+     - https://github.com/barcar/visonic_control
+- [x] alarm <-> mqtt
+     - couldn't get RS232 port to work so refactored an integration using the hosted visonic go / power manage service https://github.com/chrisns/visonic_control/tree/node_js_rewrite
+     - ~~https://github.com/nlrb/com.visonic.powermax/tree/master/node_modules/powermax-api~~
+     - ~~https://www.domoticaforum.eu/viewtopic.php?f=68&t=6581~~
+     - ~~https://github.com/barcar/visonic_control~~
+     - ~~https://github.com/DomotiGa/DomotiGa/blob/master/DomotiGa3/.src/CVisonic.class~~
+     - ~~https://github.com/irekzielinski/PowerMaxAlarm~~
+     - ~~https://domotiga.nl/projects/domotiga/wiki/Visonic~~
+     - ~~http://www.domoticz.com/forum/viewtopic.php?f=38&t=11134~~
+     - ~~https://www.domoticaforum.eu/viewtopic.php?f=68&t=7152&sid=82be8c37b9336ae49a43b14eadf33bd2&start=75#p65514~~
 - [ ] logitech harmony <-> mqtt
      - https://github.com/maddox/harmony-api
-- [ ] mqtt -> time series reporting
-     - for now rely on mqtt inbuilt logging, maybe push to elasticcache for querying?
-- [ ] mqtt <-> rules
-     - openhab2
-     - node-red
-     - home-assistant.io
-- [ ] mqtt <-> prowl notifications
-     - https://github.com/jpmens/mqttwarn
+- [x] mqtt -> time series reporting
+     - influxdb
+- [x] mqtt <-> rules
+     - ~~openhab2~~
+     - ~~node-red~~
+     - ~~home-assistant.io~~
+     - https://github.com/pinked/rules_engine/
+- [x] mqtt <-> prowl notifications
+     - https://github.com/pinked/rules_engine/
+     - ~~https://github.com/jpmens/mqttwarn~~ - couldn't use mqttwarn because doesn't support shared subscriptions so doesn't scale
 - [ ] mqtt <-> email notification
-     - https://github.com/jpmens/mqttwarn
+     - ~~https://github.com/jpmens/mqttwarn~~ - couldn't use mqttwarn because doesn't support shared subscriptions so doesn't scale
 - [ ] withings > mqtt
      - maybe node-red / openhab?
 - [ ] (mobile) presence > mqtt
      - IFTT
      - bluetooth
      - z-wave presence detectors
-- [ ] UI <-> MQTT
+- [x] UI <-> MQTT
      - http://www.hivemq.com/demos/websocket-client/
      - https://github.com/edfungus/Crouton
 - [ ] Facebook messenger <-> MQTT
