@@ -22,10 +22,11 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
     - https://github.com/Neilpang/acme.sh
     - https://github.com/hamburml/docker-flow-letsencrypt
     - https://customer.heartinternet.uk/manage/api
-- [ ] CI/CD
+- [x] CI/CD
     - https://github.com/pinked/clustered-drone
     - [x] external access via localtunnel.me
-    - [ ] application firewall/naxsi between localtunnel.me and drone to verify its a valid request from github
+    - [x] application firewall/naxsi between localtunnel.me and drone to verify its a valid request from github
+      - https://github.com/chrisns/localtunnel-whitelisted
     - [x] drone doing deploys to the swarm
     - [x] drone volume persistence in swarm [blocked by no gluster]
 - [x] pin zwave+rfxcom docker containers to hardware that supports it
@@ -101,15 +102,17 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
      - ~~https://github.com/jpmens/mqttwarn~~ - couldn't use mqttwarn because doesn't support shared subscriptions so doesn't scale
 - [ ] withings > mqtt
      - maybe node-red / openhab?
-- [ ] (mobile) presence > mqtt
+- [x] (mobile) presence > mqtt
+     - http://owntracks.org + Bluetooth 
      - IFTT
      - bluetooth
      - z-wave presence detectors
 - [x] UI <-> MQTT
      - http://www.hivemq.com/demos/websocket-client/
      - https://github.com/edfungus/Crouton
-- [ ] Facebook messenger <-> MQTT
-     - https://www.npmjs.com/package/fbmessenger
+- [x] Facebook messenger <-> MQTT
+     - https://github.com/chrisns/mqtt-chatbot-bridge
+     - ~~https://www.npmjs.com/package/fbmessenger~~
 - [ ] Waterrower > MQTT
      - https://www.npmjs.com/package/node-waterrower
      - https://www.npmjs.com/package/waterrower
