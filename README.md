@@ -98,8 +98,6 @@ I'm trying to approach it with a BDD approach and will aim to document the requi
 - [x] mqtt <-> prowl notifications
      - https://github.com/pinked/rules_engine/
      - ~~https://github.com/jpmens/mqttwarn~~ - couldn't use mqttwarn because doesn't support shared subscriptions so doesn't scale
-- [ ] mqtt <-> email notification
-     - ~~https://github.com/jpmens/mqttwarn~~ - couldn't use mqttwarn because doesn't support shared subscriptions so doesn't scale
 - [ ] withings > mqtt
      - maybe node-red / openhab?
 - [x] (mobile) presence > mqtt
